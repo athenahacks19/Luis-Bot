@@ -1,0 +1,26 @@
+{
+    "name": "LuisBot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "development",
+            "endpoint": "http://localhost:3978/api/messages",
+            "appId": "",
+            "appPassword": "",
+            "id": "1"
+        },
+        {
+            "type": "luis",
+            "name": "autis-bot",
+            "appId": "39f5a799-2045-4da2-b032-e07cfbde676a",
+            "version": "0.1",
+            "authoringKey": "XKZfAwpmDLpyTtI1lOS2HQ==!tlFlTKuNvYVo2z9dU8m9Ig1HHd1Q5Y4/GqXzNRp4n4M0Er+0494wwWgbSwzJxDLi",
+            "subscriptionKey": "gu9OQQ3qFfrDdkA9IweHrQ==!xIrbbNuREUyE0uP27PXNlm5jNETpTUTPvsNkQpFHzdnnXzE554bv/k6lXeRhpmzj",
+            "region": "westus",
+            "id": "158"
+        }
+    ],
+    "padlock": "2go0MB9JedvoVzQYL8LM7Q==!rUIBOwSvQRhWYyUzYwVB3KwPizdjGHGT9N2gfbLtZVqDwi4mpU7obnBaVh1vHD95",
+    "version": "2.0"
+}

@@ -33,7 +33,7 @@ const DEV_ENVIRONMENT = 'development';
 const BOT_CONFIGURATION = (process.env.NODE_ENV || DEV_ENVIRONMENT);
 
 // Language Understanding (LUIS) service name as defined in the .bot file.
-const LUIS_CONFIGURATION = process.env.LUIS_APP_NAME;
+const LUIS_CONFIGURATION = 'autis-bot';
 
 if (!LUIS_CONFIGURATION) {
     console.error('Make sure to update the index.js file with a LUIS_CONFIGURATION name that matches your .bot file.');
