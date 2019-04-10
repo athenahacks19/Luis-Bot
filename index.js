@@ -3,7 +3,7 @@
 
 const path = require('path');
 const restify = require('restify');
-const { BotFrameworkAdapter } = require('botbuilder');
+const { BotFrameworkAdapter, ConversationState, MemoryStorage, UserState } = require('botbuilder');
 const { BotConfiguration } = require('botframework-config');
 const { LuisBot } = require('./bot');
 
@@ -33,7 +33,7 @@ const DEV_ENVIRONMENT = 'development';
 const BOT_CONFIGURATION = (process.env.NODE_ENV || DEV_ENVIRONMENT);
 
 // Language Understanding (LUIS) service name as defined in the .bot file.
-const LUIS_CONFIGURATION = '';
+const LUIS_CONFIGURATION = process.env.LUIS_APP_NAME;
 
 if (!LUIS_CONFIGURATION) {
     console.error('Make sure to update the index.js file with a LUIS_CONFIGURATION name that matches your .bot file.');
@@ -72,10 +72,20 @@ adapter.onTurnError = async (context, error) => {
     await context.sendActivity(`Oops. Something went wrong!`);
 };
 
+// For local development, in-memory storage is used.
+// CAUTION: The Memory Storage used here is for local bot debugging only. When the bot
+// is restarted, anything stored in memory will be gone.
+const memoryStorage = new MemoryStorage();
+
+// Create conversation and user state with in-memory storage provider.
+const conversationState = new ConversationState(memoryStorage);
+const userState = new UserState(memoryStorage);
+
+
 // Create the LuisBot.
 let bot;
 try {
-    bot = new LuisBot(luisApplication, luisPredictionOptions);
+    bot = new LuisBot(luisApplication, luisPredictionOptions, userState, conversationState);
 } catch (err) {
     console.error(`[botInitializationError]: ${ err }`);
     process.exit();
