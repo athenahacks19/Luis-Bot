@@ -11,16 +11,24 @@
             "id": "1"
         },
         {
+            "type": "endpoint",
+            "appId": "23084088-9a81-4d82-b5fd-176d278f7516",
+            "appPassword": "ERDE0WzTs4Z52m/SnTkJsw==!QxPG/Z2j0sAUo0NQtyILQN0gqqtbNRi1OSjf77Q9v/kauWG8I3Om3Nu1IMUb/ir6",
+            "endpoint": "https://autis-bot.azurewebsites.net/api/messages",
+            "id": "1",
+            "name": "production"
+        },
+        {
             "type": "luis",
             "name": "autis-bot",
             "appId": "39f5a799-2045-4da2-b032-e07cfbde676a",
             "version": "0.1",
-            "authoringKey": "XKZfAwpmDLpyTtI1lOS2HQ==!tlFlTKuNvYVo2z9dU8m9Ig1HHd1Q5Y4/GqXzNRp4n4M0Er+0494wwWgbSwzJxDLi",
-            "subscriptionKey": "gu9OQQ3qFfrDdkA9IweHrQ==!xIrbbNuREUyE0uP27PXNlm5jNETpTUTPvsNkQpFHzdnnXzE554bv/k6lXeRhpmzj",
+            "authoringKey": "PZY0Ocqi3n/W9XKoiNwHIQ==!pYHjbaYyoZFcqu4C4Y/jmFHWLoHjDe04UyBAf+11iQj/quUAW8aANbWW39MZXUkC",
+            "subscriptionKey": "WGB0gUgmZFCKOqgtvgnz2A==!1eFXmvgCuuIykuklJs5Ssvgct6qpGVxwRuRt3/xjgnDr536/XM3DsuBp3isYdN3C",
             "region": "westus",
             "id": "158"
         }
     ],
-    "padlock": "2go0MB9JedvoVzQYL8LM7Q==!rUIBOwSvQRhWYyUzYwVB3KwPizdjGHGT9N2gfbLtZVqDwi4mpU7obnBaVh1vHD95",
+    "padlock": "mlNkus2+xckTcSxDf/FLnw==!q/jlrFHuyTzxvT7z31l+cxbhKsDwmeF7tYxck1zGg/NJ3PvZSEHm1/4vKt8Q75tV",
     "version": "2.0"
 }
