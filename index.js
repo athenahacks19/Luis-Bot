@@ -60,6 +60,8 @@ const luisPredictionOptions = {
     staging: false
 };
 
+console.log(endpointConfig);
+
 // Create adapter. See https://aka.ms/about-bot-adapter to learn more about adapters.
 const adapter = new BotFrameworkAdapter({
     appId: endpointConfig.appId || process.env.MicrosoftAppId,

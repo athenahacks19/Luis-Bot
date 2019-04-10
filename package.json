@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Microsoft/BotBuilder-Samples.git"
+        "url": "https://github.com/athenahacks19/Luis-Bot.git"
     },
     "dependencies": {
         "botbuilder": "^4.2.0",

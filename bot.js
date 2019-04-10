@@ -124,8 +124,8 @@ class LuisBot {
                 }
             });
 
-            xhr.open("POST", API_ENDPOINT);
-            xhr.setRequestHeader("Ocp-Apim-Subscription-Key", API_KEY);
+            xhr.open("POST", process.env.API_ENDPOINT);
+            xhr.setRequestHeader("Ocp-Apim-Subscription-Key", process.env.API_KEY);
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.setRequestHeader("Accept", "application/json");
 
